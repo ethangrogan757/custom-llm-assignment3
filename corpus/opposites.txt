@@ -1,0 +1,18 @@
+hot is the opposite of cold .
+up is the opposite of down .
+big is the opposite of small .
+fast is the opposite of slow .
+happy is the opposite of sad .
+light is the opposite of dark .
+full is the opposite of empty .
+loud is the opposite of quiet .
+old is the opposite of new .
+wet is the opposite of dry .
+easy is the opposite of hard .
+early is the opposite of late .
+open is the opposite of closed .
+heavy is the opposite of light .
+near is the opposite of far .
+the giant was tall . the mouse was short .
+the fire was hot . the ice was cold .
+the turtle moved slow . the rabbit moved fast .

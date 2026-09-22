@@ -1,0 +1,20 @@
+{
+  "0.3": [
+    "the team discussed the professor and the learning at the school .",
+    "the local bicycle was mentioned in the journey report yesterday .",
+    "the new merchandise was mentioned in the price report yesterday .",
+    "the team discussed the merchandise and the price at the market ."
+  ],
+  "0.8": [
+    "the team discussed the mango and the juice at the kitchen .",
+    "the local bicycle was mentioned in the travel report yesterday .",
+    "the subscriber ordered the item after checking the price .",
+    "we learned about the local merchandise during a discussion of price ."
+  ],
+  "1.2": [
+    "has team discussed the mango and the juice at the kitchen .",
+    "the local bicycle was mentioned in the travel report yesterday .",
+    "the subscriber ordered the item after checking the price .",
+    "we learned about the local merchandise during a discussion of price ."
+  ]
+}
