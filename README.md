@@ -1,253 +1,277 @@
-# Building a Custom LLM with nanoGPT
+# Ethan's Custom LLM Experiment
 
-Class 4, Fall 26 · From Zero to AI Agents
+I trained Karpathy's nanoGPT from scratch on a small word-token corpus, inspected what it
+actually learned inside, evaluated it with a fixed 48-case language suite, and built a chat
+interface around it. This README covers two runs: a **starter run** on the supplied classroom
+corpus, and a **corpus-extension run** where I added my own teaching material for the
+*negation* and *opposites* eval categories. Everything below is drawn directly from my own
+executed notebooks and saved results — nothing here needs to be rerun to be checked.
 
-Train Karpathy's actual **nanoGPT transformer** from scratch and inspect its learned
-**word-token embeddings**. The classroom adaptation uses whole words and punctuation,
-a small sentence corpus, and an explanatory notebook. nanoGPT itself supports different
-tokenizers; changing the model name alone would not turn character tokens into words.
+*(General project/notebook setup docs from the starter template live in [PROJECT_SETUP.md](PROJECT_SETUP.md).)*
 
-[Open in Colab](https://colab.research.google.com/github/pepealonso95/custom-llm/blob/main/custom_llm.ipynb)
-· [Assignment Google Doc](https://docs.google.com/document/d/1MQ3YQl2ywWZF7W5_l_91FiIp7pTYPO_3viI2JVapRcc/edit)
-· [Assignment text](ASSIGNMENT.md)
-· [3D embedding viewer](embedding-viewer.html)
+## Overview
 
-## Start here
+- **Notebooks:** [`custom_llm_starter.ipynb`](custom_llm_starter.ipynb) and
+  [`custom_llm_expanded.ipynb`](custom_llm_expanded.ipynb), both executed in Google Colab with
+  outputs intact.
+- **Corpus additions:** [`corpus/negation.txt`](corpus/negation.txt) and
+  [`corpus/opposites.txt`](corpus/opposites.txt) — 18 sentences each, written by me for this
+  assignment. No external source: no scraped text, no PDFs, so there was no extraction step or
+  OCR/encryption warnings to check. Plain UTF-8 `.txt`, which the notebook confirmed importing
+  cleanly (section 3 output, mirrored in
+  [`evidence/expanded/corpus_manifest.json`](evidence/expanded/corpus_manifest.json), shows
+  zero warnings for both files).
+- **To open and run:** open either notebook link above directly on GitHub to read the executed
+  cells, or open [the notebook in Colab](https://colab.research.google.com/github/pepealonso95/custom-llm/blob/main/custom_llm.ipynb),
+  save your own copy, paste in my corpus files (for the expanded run), and Run All. Default CPU
+  runtime is enough — I trained on Colab's free CPU tier.
 
-1. Open the notebook in Colab and save your own copy. The default CPU runtime is enough.
-2. Choose corpus, training steps and learning rate in section 1. Optionally add PDF, TXT or MD files to `corpus/` as explained below. Write your reasons and prediction.
-3. Try 10 steps for setup, then start with 3,000 steps and a learning rate of 0.001.
-4. Run All. Inspect the data, IDs, vectors, gradient, first weight update, probabilities, attention and samples.
-5. Inspect the 48 language evals in sections 6b and 8b. Keep every result, including unknown-word cases. Use section 10 to chat with your trained model and save at least three real interactions.
-6. Choose at least two extension categories, add different teaching examples to `corpus/`, and run a second experiment using the same tests.
-7. Download each results ZIP and the executed notebook separately after the final cell.
-8. Download embedding-viewer.html and open it locally. Use **Open your checkpoint** to load checkpoint.json from your extracted results ZIP.
-9. Explain the actual evidence in your own README and submit your public repository URL through the [course portal](https://submissions-portal-eight.vercel.app).
+## What I taught it, and why
 
-Locally, install the dependencies in requirements.txt, then open custom_llm.ipynb
-with that Python environment. You can also run custom_llm.py directly after editing
-its settings. Colab generally already includes PyTorch. Setup installs pypdf if absent, creates `corpus/`, and downloads
-the pinned nanoGPT source if needed and verifies its hash; it downloads no model weights.
+I kept `CORPUS = "classroom"` for both runs so my additions sit on top of the supplied
+sentences rather than replacing them, and I used `LEARNING_RATE = 0.001` throughout — the
+notebook's suggested starting point, with its own warmup and cosine decay. I ran
+`TRAINING_STEPS = 10` first purely to confirm the pipeline worked end to end, then
+`TRAINING_STEPS = 3000` for both real experiments.
 
-## Fixed language evals and chat
+For the corpus extension, I picked **negation** and **opposites** because they seemed like the
+most teachable extension categories with a small, repeatable sentence template — "X did not do
+A. X did B instead" and "A is the opposite of B." I wrote 18 original sentences per category
+(see the files linked above), varying the names, objects, and situations so the model would see
+the *pattern*, not one memorized sentence.
 
-The repository includes **48 synthetic language evals**: 16 reserved starter-pattern
-cases, 8 new phrasings using starter vocabulary, and 24 corpus-extension challenges
-covering grammar, opposites, negation, references, sequence, spatial relations,
-everyday knowledge, and categories/analogies.
+| | Starter | Expanded |
+|---|---|---|
+| Unique passages (after dedup) | 4,592 | 4,649 (+57 from my files) |
+| Train / validation documents | 4,132 / 460 | 4,184 / 465 |
+| Vocabulary size (retained types) | 136 (133 word types + UNK/BOS/EOS) | 230 (227 word types + UNK/BOS/EOS) |
+| Training unknown-token rate | 0.0% | 0.0% |
+| Validation unknown-token rate | 0.0% | 0.25% |
 
-**[Read the eval guide and examples](evals/README.md)** ·
-**[Inspect all 48 cases](evals/language_evals.json)**
+Both runs retained **every** training token type — nothing hit the 509-type cap, so nothing got
+pruned to UNK. Full detail: [`evidence/starter/corpus_manifest.json`](evidence/starter/corpus_manifest.json) /
+[`evidence/expanded/corpus_manifest.json`](evidence/expanded/corpus_manifest.json), and
+[`evidence/starter/vocabulary_report.json`](evidence/starter/vocabulary_report.json) /
+[`evidence/expanded/vocabulary_report.json`](evidence/expanded/vocabulary_report.json). Since
+the split is by deduplicated passage rather than by source file, "held-out" here means new
+sentence combinations from the same templates, not unseen topics.
 
-Run All now saves complete untrained/final scores and free continuations, category
-breakdowns, unknown-word coverage, and corpus-separation evidence in the results ZIP.
-The answer key stays outside the model input and training data. Exact test prefixes
-are excluded from generated training sentences; imported files containing them are
-rejected. The original validation-loss panels remain a separate measurement.
+## Prediction vs. what actually happened
 
-Students first save a starter-corpus run, then add different teaching material for
-at least two extension categories and compare a second run. Keep all tests fixed.
-This is a public development benchmark, not an unseen generalization claim. A low
-score is valid evidence; there is no required pass rate.
+Before the 10-step sanity check, I predicted: *"I expect the model to produce mostly gibberish
+— random or repeated tokens with little grammatical structure. Ten weight updates isn't nearly
+enough to learn meaningful patterns; at best it might start slightly favoring more frequent
+tokens over a purely random distribution."* That's exactly what I got —
+[`evidence/starter/samples/step_0000.txt`](evidence/starter/samples/step_0000.txt) is
+unstructured word soup (`"website doctor light cloudy mango wore pear..."`).
 
-**How this affects the assignment grade:** the course's 10-point framework stays
-deliverable quality **4**, testing & evaluation **3**, and working result **3**.
-Complete, valid evals and a reasoned comparison of both corpus experiments are
-required evidence for the 3-point evaluation category. Submit all four untrained/
-trained result sets. Missing runs, leaked tests, or missing analysis reduce credit;
-a low model score alone does not. The runner's score is not an automatic grade.
-See [the full grading guidance](ASSIGNMENT.md#how-evals-affect-your-assignment-grade).
+Going into the full 3,000-step runs, I expected the much larger loss drop to produce fully
+grammatical sentences (it did — see below), and I expected the corpus extension to noticeably
+improve the negation/opposites eval scores (it didn't). That second miss turned out to be the
+most useful finding of the whole assignment, because tracking down *why* revealed something
+real about how this pipeline handles small, narrow additions — not a bug, but a genuine
+limitation I explain in detail further down.
 
-Notebook section 10 provides a working prompt/reply interface. Edit the prompt and
-rerun its cell; each message starts fresh. Terminal alternatives after training:
+## The runs themselves
 
-```sh
-python run_evals.py --model llm_runs/YOUR_RUN/model.pt --output results/my-evals
-python chat.py --model llm_runs/YOUR_RUN/model.pt --transcript results/my-chat.json
-```
+Both used the same architecture: nanoGPT, `n_embd=64`, `n_head=4`, `n_layer=2`,
+`block_size=48`, `batch_size=32`, seed 42, CPU-only (Colab), PyTorch 2.11.0+cpu. Neither run was
+interrupted.
 
-Replace `YOUR_RUN` with your actual folder. `model.pt` contains the network;
-`checkpoint.json` serves the embedding viewer. No external model API is used.
-Keep `evals/`, results, and chat transcripts outside `corpus/`.
+| | Starter | Expanded |
+|---|---|---|
+| Steps completed | 3,000 / 3,000 | 3,000 / 3,000 |
+| Elapsed time | ~57 seconds | ~60 seconds |
+| Parameters | 111,872 | 117,888 |
 
-## What students should understand
+Config/summary files: [`evidence/starter/config.json`](evidence/starter/config.json),
+[`evidence/starter/training_summary.json`](evidence/starter/training_summary.json),
+[`evidence/expanded/config.json`](evidence/expanded/config.json),
+[`evidence/expanded/training_summary.json`](evidence/expanded/training_summary.json).
 
-| Idea | Evidence |
-|---|---|
-| Corpus and data | Imported text, short passages, deduplication and held-out passages |
-| Tokens and IDs | Words/punctuation mapped to arbitrary integer IDs |
-| Vectors and embeddings | One word's 64 numbers before/after, and the complete table |
-| Neural networks | Weighted sums, GELU, attention blocks, residuals and parameters |
-| Learning | Next-token loss, a real gradient and a parameter update |
-| Context and prediction | Trained causal attention and next-token probabilities |
-| Inference | Samples at three temperatures without weight updates |
+**Loss** (fixed panels of 20 train / 20 validation documents, mean loss over non-padding
+next-token targets — full histories:
+[starter](evidence/starter/history.json), [expanded](evidence/expanded/history.json)):
 
-The story is **examples → predictions → loss → gradients → updates → changed predictions**.
-Character embeddings were already real embeddings in the original lab; the difference
-here is that the units represent words rather than letters. A coordinate is not a
-named concept, and a small language model is not a general chat assistant.
+![Starter loss curve](evidence/starter/training_curves.svg)
 
-## Corpus and tokenizer
+| Step | Train loss | Val loss |
+|---|---|---|
+| 0 | 4.9263 | 4.9275 |
+| 1,500 | 0.6821 | 0.7182 |
+| 3,000 | 0.6783 | 0.7061 |
 
-The default is a **synthetic classroom corpus**, generated visibly in the notebook.
-It repeats sentence contexts around business, finance, food, transport, software,
-health and education words. No category labels or coordinates are given to the model
-or viewer. This deliberately controlled dataset makes distributional learning easy
-to inspect; the resulting similarities are not evidence of broad semantic knowledge.
+![Expanded loss curve](evidence/expanded/training_curves.svg)
 
-- Reserve fixed language-eval prompts before the split or vocabulary building.
-- Split long text into passages of at most 47 word/punctuation tokens, normalize
-  case and spacing, deduplicate, then split passages 90/10.
-- Build the vocabulary only from training passages. Keep the 509 most frequent
-  word/punctuation types, plus UNK, BOS and EOS (512 total at most).
-- Reserve UNK for omitted/unknown tokens, BOS for passage start and EOS for passage end.
-- Report unknown-token rates for both training and held-out text.
-- Validation shares sentence templates with training. It tests new combinations
-  within those templates, not generalization to unseen domains or writing styles.
+| Step | Train loss | Val loss |
+|---|---|---|
+| 0 | 5.4369 | 5.4196 |
+| 1,500 | 0.7097 | 0.7045 |
+| 3,000 | 0.6927 | 0.7132 |
 
-## Expand your corpus with files
+One thing I noticed rather than smoothed over: in the expanded run, validation loss actually
+rises slightly between step 1,500 and 3,000 (0.7045 → 0.7132) while training loss keeps
+dropping — a small, early overfitting signal. I wouldn't read too much into it given how tiny
+the validation panel is (20 documents), but it's a real pattern in the numbers, so I'm reporting
+it rather than ignoring it.
 
-Put your files in **`corpus/` beside the notebook**, for example:
+**Samples**, same generation settings throughout, full files linked (including the raw,
+sometimes-garbled early output):
+[starter step 0](evidence/starter/samples/step_0000.txt) → [1,500](evidence/starter/samples/step_1500.txt) →
+[3,000](evidence/starter/samples/step_3000.txt) (*"the team discussed the professor and the
+learning at the school ."*); [expanded step 0](evidence/expanded/samples/step_0000.txt) →
+[1,500](evidence/expanded/samples/step_1500.txt) → [3,000](evidence/expanded/samples/step_3000.txt)
+(*"the team discussed the mango and the juice at the kitchen ."*).
 
-```text
-custom_llm.ipynb
-corpus/
-  report.pdf
-  notes.txt
-  research/
-    summary.md
-```
+## How this model actually learns — traced through one real word
 
-1. **Locally:** add files to that folder. Subfolders and uppercase extensions work too.
-2. **In Colab:** run sections 1 and 2 once to create `/content/corpus`. In the left
-   Files sidebar, refresh and upload your files into that folder. Opening the notebook
-   from GitHub does not copy the repository's folders or your local files into Colab.
-3. Keep `CORPUS = "classroom"` to add the files to the teaching sentences. Use
-   `CORPUS = "folder"` to train only on your files. Folder-only mode needs at least
-   100 distinct extracted passages. `CORPUS_FOLDER` can point to another local folder.
-4. **Run All from the top.** Section 3 reports the imported filenames, previews,
-   passage counts and extraction warnings. Check that the expected text is present.
-5. After training, download the new results ZIP and load its `checkpoint.json` in the
-   embedding viewer. Adding files alone does not update the model or viewer: this is
-   training from scratch, not a document search system.
+Everything here comes from [`evidence/expanded/inspection.json`](evidence/expanded/inspection.json)
+and [`evidence/expanded/tokenization.json`](evidence/expanded/tokenization.json).
 
-PDFs must contain extractable text. Scans need OCR first; encrypted, unreadable and
-entirely textless files stop the run with the filename and a useful error. PDFs with
-some textless pages produce warnings. Inspect previews and `corpus.txt`, especially
-for tables, columns or headers whose extraction order can be confusing. TXT and MD
-must use UTF-8. Markdown is read as plain text; links and code are not fetched or run.
+A **corpus** is just the text I feed in; a **token** is one word or punctuation mark the text
+gets split into. Every token gets an arbitrary integer **ID** — the word "customer" happens to
+be **token ID 45** in this vocabulary. That ID indexes into a lookup table of **embeddings**:
+one 64-number vector per token, which is what the network actually reads and writes to. Before
+training, "customer"'s vector starts as small random noise (first three of its 64 numbers:
+`-0.0311, 0.0250, 0.0092`); after 3,000 steps it's moved to `0.0332, 0.0332, -0.0478` — those
+64 numbers are the network's compressed representation of how "customer" behaves in context, and
+they only shifted because training pushed them there.
 
-Long text is split automatically, not truncated, with sentence/line boundaries kept
-when possible. There is no overlap between chunks. The 90/10 split is by deduplicated
-**passage, not original file**: parts of one source file can appear in both sets.
-This does not measure generalization to entirely unseen source documents.
+Here's a real, single parameter update from that same vector, its first coordinate: before
+training that number was `-0.0311128`. The network's error on that step produced a gradient of
+`-0.0010441` for it, and at that point in training the (warmup-scaled) learning rate was
+`1e-05`. AdamW turned that into an update of about `+0.00001`, landing at `-0.0311028`. Notice
+the step size (~1e-5) is close to the *learning rate itself*, not `gradient × learning_rate`
+(which would be ~1e-8) — that's because AdamW normalizes each update by its running estimate of
+the gradient's scale, so it doesn't take a plain gradient-proportional step the way basic SGD
+would.
 
-Larger vocabularies no longer cause rejection. Tokens outside the 509 retained types
-become UNK, as do token strings longer than 128 characters. Inspect
-`vocabulary_report.json` and the printed coverage rates; a large, varied collection
-can lose much of its detail in this deliberately small vocabulary. The notebook warns
-above 5% unknown tokens. Start with focused, related text, not an entire library.
+The clearest evidence that this actually changed the model's behavior: next-token probabilities
+for the prompt **"the customer"**, over the full 230-word vocabulary. Untrained, the top guess
+was "customer" itself at just **0.95%** — essentially flat and random. Trained, the top guess
+became **"compared" at 20.5%**, followed by reviewed / returned / ordered / selected — precisely
+the verbs the classroom corpus's templates use right after "the customer/client/buyer...". That
+shift, from near-uniform to a sharp, correct-shaped distribution, is loss dropping from ~5.4 to
+~0.7 made concrete.
 
-`corpus_manifest.json` records filenames, hashes, previews, warnings, added passages
-and duplicate counts. Limits: 50 supported files, 25 MB each, 100 MB total, 200 pages
-per PDF and 2 million extracted characters per file. Hidden files, symbolic links,
-unsupported formats and the root `corpus/README.md` instructions are ignored.
+## Attention, generation, and temperature
 
-**Sharing:** added source files in `corpus/` are Git-ignored, but the results ZIP,
-executed notebook and trained model can still expose their content. The ZIP includes
-extracted text, filenames/hashes and weights. Use material you have permission to use
-and share; review every artifact before publishing. Colab uploads disappear when its
-runtime storage is reset. See [the folder instructions](corpus/README.md).
+Each output position attends only to tokens **at or before** it — the `attention_rows` in
+`inspection.json` are lower-triangular, meaning a token literally cannot see what comes after
+it. That's what makes "predict the next token" a well-posed task instead of a paradox. At each
+step, the network turns its internal state into a probability over every vocabulary token, and
+generation samples from that distribution one token at a time, feeding each choice back in as
+context for the next.
 
-## The actual nanoGPT model
+**Temperature** reshapes that probability distribution before sampling, without touching any
+weights — same prompt, same seed, three different temperatures
+([`evidence/expanded/temperature_comparison.json`](evidence/expanded/temperature_comparison.json)):
 
-[nanogpt_model.py](nanogpt_model.py) is an unchanged copy of Karpathy's
-[model.py at commit 3adf61e](https://github.com/karpathy/nanoGPT/blob/3adf61e154c3fe3fca428ad6bc3818b27a3b8291/model.py).
-Its [MIT license](NANOGPT_LICENSE) is included.
+- **T=0.3:** *"the team discussed the professor and the learning at the school ."* — sharpens
+  toward the single most likely path, almost deterministic.
+- **T=0.8:** *"the team discussed the mango and the juice at the kitchen ."* — same grammatical
+  frame, different plausible word fills.
+- **T=1.2:** *"has team discussed the mango and the juice at the kitchen ."* — flattens the
+  distribution enough that a lower-probability, ungrammatical choice ("has team" instead of "the
+  team") slips through.
 
-The classroom configuration uses 2 blocks, 4 heads, 64-dimensional token/position
-embeddings, a 48-token context, LayerNorm, GELU, residual connections and tied
-input/output embeddings. PyTorch handles autograd; batched AdamW replaces the old
-handwritten scalar training loop. Word tokenization and the teaching/evaluation/export
-helpers are classroom additions, not claims about nanoGPT's default tokenizer.
+## One limitation, explained, and what I'd try next
 
-The upstream repository now labels nanoGPT deprecated in favor of nanochat.
-We deliberately pin nanoGPT here because this assignment is about its compact,
-inspectable GPT implementation, not adopting a production training stack.
+The corpus extension didn't move the needle on `extend_corpus` eval cases at all — 0/24 correct
+before and after, with only 1 of 24 even scorable. My first guess was that the 509-token
+vocabulary cap had pruned my new words, but `vocabulary_report.json` rules that out: **zero**
+types were omitted in either run. So I checked the actual failing eval cases directly.
 
-## Viewer
+Two real causes, both explainable and neither a training bug:
 
-Open the single offline HTML file. It bundles the reference model's **actual recorded
-initial and final token lookup embeddings**. Drag to rotate, scroll or use buttons to
-zoom, and select a word from the menu or click a dot. Scroll the vector panel for all
-64 coordinates. Selected words and their three closest neighbors are labeled.
+1. **Vocabulary mismatch.** The 24 `extend_corpus` cases span all 8 extension categories, and I
+   only wrote material for 2 of them. Worse, even within negation/opposites, the eval cases use
+   specific words — "ava," "box," "door," "buy," "noisy," "soft" — that I never happened to use
+   anywhere in my sentences. Those cases were always going to be unscorable, independent of how
+   much training happened.
+2. **Single-occurrence words and the random split.** One case needed "quiet," which I *did*
+   teach ("loud is the opposite of quiet ."), but it still shows as unknown. Vocabulary is built
+   only from the training split, and the notebook's 90/10 passage split is random — a word
+   appearing in exactly one passage has roughly a 1-in-10 chance of that passage landing
+   entirely in validation, taking the word out of the trained vocabulary with it.
 
-Both states share a PCA center, basis and scale. The default projection retains
-40.9% of pooled variance, so proximity in 3D can distort the full space. Neighbor
-rankings use cosine similarity across all 64 coordinates. Movement lines connect
-endpoints, not intermediate training trajectories. These are token lookup embeddings,
-not position embeddings or context-dependent representations after attention.
+**Next experiment I'd run:** rewrite the negation/opposites files to reuse the general
+vocabulary those eval cases actually rely on (without copying the eval prompts or answers
+themselves), and repeat each key word across 3–4 different sentences instead of one, so no
+single word is one unlucky split away from disappearing. I'd predict that gets the scorable
+count well past 1/24 — though not close to 24/24, since 6 of the 8 extension categories still
+wouldn't have any teaching material behind them.
 
-Load your own checkpoint.json to see your actual run, including its saved initial
-table. Files stay on your device. Legacy character checkpoints remain supported;
-when no initial table is present, before/after comparison is disabled.
+## Evals: how they're scored, what I found, and how leakage was checked
 
-## Measured language-eval run
+**Scoring:** each of the 48 fixed cases in [`evals/language_evals.json`](evals/language_evals.json)
+gives the model a prompt and 4 single-word choices; it scores 1 if the trained model assigns the
+*highest* probability to the correct choice, 0 otherwise (ties score 0). Cases where the prompt
+or an answer choice uses a word outside the model's vocabulary are marked unscorable and count
+as 0 in the all-case rate — that's a coverage gap, not a wrong answer. The model's free-text
+continuation is saved separately and isn't part of this score. Runner:
+[`run_evals.py`](run_evals.py).
 
-The revised notebook was executed with 3,000 steps: **16/16 starter-pattern cases**
-and **4/8 new-wording cases** passed. All 24 extension cases lacked the required
-vocabulary. Complete untrained/final outputs and an actual three-prompt terminal
-transcript are in [the language-eval reference](examples/language-evals/README.md).
-These are measured teaching examples, not a required student score.
+**Results**, all four required sets:
 
-## Historical reference run
+| Experiment | Stage | Correct / 48 | Scorable / 48 | Accuracy on scorable cases | Full results |
+|---|---|---|---|---|---|
+| Starter | Untrained | 9 | 24 | 37.5% | [link](evidence/starter/language_evals/untrained/) |
+| Starter | Trained | 20 | 24 | 83.3% | [link](evidence/starter/language_evals/final/) |
+| Expanded | Untrained | 6 | 25 | 24.0% | [link](evidence/expanded/language_evals/untrained/) |
+| Expanded | Trained | 21 | 25 | 84.0% | [link](evidence/expanded/language_evals/final/) |
 
-The historical reference notebook below was executed with 3,000 steps and learning rate 0.001,
-before the separate language-eval suite was added. Its numbers are not results for
-the new suite or the new reserved-prompt corpus.
-It learned 136 word/punctuation/special-token vectors. A separate 10-step setup run
-also completed. These are fixed panels of 20 documents per split, not full-corpus loss.
+Combined comparison files:
+[starter](evidence/starter/language_eval_comparison.json),
+[expanded](evidence/expanded/language_eval_comparison.json). Breaking it down by group after
+training: `starter_patterns` hit 16/16 in both runs — the model clearly learned the
+domain-noun/context/place associations from the templates. `starter_transfer` (familiar words,
+new phrasing) improved too, 4/8 → 5/8 with the extension. `extend_corpus` is the flat 0/24
+covered above.
 
-| Step | Training panel loss | Validation panel loss |
-|---|---:|---:|
-| 0 | 4.9238 | 4.9247 |
-| 1500 | 0.6929 | 0.7113 |
-| 3000 | 0.6956 | 0.7057 |
+**Leakage check:** [`evidence/expanded/eval_separation.json`](evidence/expanded/eval_separation.json)
+confirms 160 reserved passages were excluded before splitting or building vocabulary, in both
+runs, via normalized contiguous-prompt matching. I also manually re-read
+`negation.txt`/`opposites.txt` against the 48 cases myself, since the automated check is a
+string match, not a semantic one, and I never pasted eval prompts, choices, or answers into the
+corpus or generated training text. These are public tests I used to steer the extension corpus
+during development — not a held-out final benchmark.
 
-Final examples include “our school has a question about the new educator and lesson .”
-and “the consumer compared the merchandise after checking the price .”
-The measured nearest neighbors of customer are client, buyer and subscriber.
-Their similar designed contexts explain this result; it does not prove general understanding.
+## Chat interface
 
-Inspect [the executed notebook](examples/custom_llm.executed.ipynb),
-[complete reference evidence](examples/reference/), and
-[results ZIP](examples/reference.zip). Use your own outputs in your submission.
+**To launch:** open [`custom_llm_expanded.ipynb`](custom_llm_expanded.ipynb) section 10 in
+Colab — it reuses the model already trained in that session, no extra setup. To run it
+standalone instead: `pip install -r requirements.txt`, then
+`python chat.py --model evidence/expanded/model.pt --transcript new_chat.json`. Model identity:
+the `model_sha256` recorded in
+[`evidence/expanded/chat_transcript.json`](evidence/expanded/chat_transcript.json) matches the
+expanded run's final checkpoint (3,000 completed steps).
 
-## Results and longer training
+Screenshot: [`evidence/chat_screenshot.png`](evidence/chat_screenshot.png). Six real
+interactions ([full transcript](evidence/expanded/chat_transcript.json)):
 
-Every run saves config.json, corpus.txt, corpus_manifest.json, vocabulary_report.json,
-split.json, tokenization.json, inspection.json,
-history.json, training.csv, training_summary.json, training_curves.svg, the sample
-timeline, temperature_comparison.json, checkpoint.json and model.pt. It also saves
-model_untrained.pt, eval_separation.json, language_eval_comparison.json, and complete
-language_evals/untrained and language_evals/final folders. The chat cell adds
-chat_transcript.json and refreshes the ZIP.
+| Prompt | Response | Note |
+|---|---|---|
+| "the customer" | "compared the merchandise after checking the price ." | in-domain, grammatical |
+| "the doctor" | "was focused on patient ." | in-domain, grammatical |
+| "the astronaut" | "is local truck ." | **limitation** — "astronaut" is unknown; output falls apart |
+| "the dog" | "did not tea ." | picked up negation *syntax*, applied it nonsensically |
+| "the local man" | "the client ." | "man" is an unknown word |
+| "the teacher" | "reviewed the item after checking the price ." | in-domain, grammatical |
 
-- **checkpoint.json:** token labels and initial/final embedding tables for the viewer.
-- **model.pt:** all network weights and model settings for inference.
-- Neither includes the complete optimizer/random state for exact training resume.
-- For the required corpus-extension experiment, keep the original results and train
-  a fresh model with your added teaching examples.
-- To train longer, set TRAINING_STEPS to 5000 or 10000 and Run All from the top.
-  Compare validation loss and samples. More steps can overfit and are not required.
-- Interrupted training can be followed by the remaining save cells. Other failures
-  require correcting the cause; do not assume a complete ZIP was saved.
+**Limitation:** every prompt starts a fresh context — `fresh_context_per_prompt: true` in the
+transcript, no memory across turns. The model only knows the ~230 word types it trained on;
+anything outside that (like "astronaut") produces ungrounded output, as shown above. It's a
+narrow sentence-continuation model, not a general assistant, and chatting with it never feeds
+those messages back into training or the corpus.
 
-Use [STUDENT_README.md](STUDENT_README.md) to organize your explanation.
-The [historical microgpt lab](legacy/README.md) is preserved separately; its results
-must not be presented as results of this word-token model.
+## Reproduce this
 
-For maintainers: run python3 build_embedding_viewer.py to refresh the bundled
-reference vectors, then node test_embedding_viewer.cjs to verify PCA, similarities,
-checkpoint consistency and import validation. Run python3 test_corpus.py to check
-real PDF/TXT/MD extraction, long-text chunking, nested files and useful failure messages.
+- Notebooks: [`custom_llm_starter.ipynb`](custom_llm_starter.ipynb),
+  [`custom_llm_expanded.ipynb`](custom_llm_expanded.ipynb) — open directly on GitHub to read
+  executed outputs, or in Colab to rerun.
+- My corpus additions: [`corpus/negation.txt`](corpus/negation.txt),
+  [`corpus/opposites.txt`](corpus/opposites.txt) (force-committed despite the template's default
+  `corpus/*` gitignore, since this is original, non-sensitive text).
+- Every result file (loss history, eval CSVs/JSONs, samples, inspection data, trained weights)
+  is under [`evidence/starter/`](evidence/starter/) and [`evidence/expanded/`](evidence/expanded/).
