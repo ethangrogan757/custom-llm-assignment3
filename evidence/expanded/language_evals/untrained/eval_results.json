@@ -11,18 +11,18 @@
       "code"
     ],
     "expected": "service",
-    "predicted_choice": "service",
-    "score": 1,
+    "predicted_choice": "juice",
+    "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "service": 0.004891037475317717,
-      "traffic": 0.004167888313531876,
-      "juice": 0.004006961360573769,
-      "code": 0.0044225240126252174
+      "service": 0.002107006497681141,
+      "traffic": 0.002342834370210767,
+      "juice": 0.00278848665766418,
+      "code": 0.0027149964589625597
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "website doctor light cloudy mango wore pear understand slept recommended purchase coffee treatment interest drink couch . kitchen nina compared giant bicycle office market",
+    "generated_text": "movie soup offering kitchen kitchen basketball clean room",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs customer with service and related domain words. The other choices belong to different domains.",
     "stage": "untrained",
@@ -40,18 +40,18 @@
       "quality"
     ],
     "expected": "quality",
-    "predicted_choice": "quality",
-    "score": 1,
+    "predicted_choice": "lesson",
+    "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "patient": 0.004357568919658661,
-      "interest": 0.003883982775732875,
-      "lesson": 0.003405218478292227,
-      "quality": 0.005030479747802019
+      "patient": 0.0019200991373509169,
+      "interest": 0.0023676699493080378,
+      "lesson": 0.002575778169557452,
+      "quality": 0.0022160036023706198
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "wore consumer is sleep doctor hospital learning game cool new service bus brand played eat hot nurse slow discussion",
+    "generated_text": "product treatment consumer bought review loud who the thirsty missing mango service order today runs omar tool fruit did wear hat product fruit empty",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs merchandise with quality and related domain words. The other choices belong to different domains.",
     "stage": "untrained",
@@ -69,18 +69,18 @@
       "harvest"
     ],
     "expected": "payment",
-    "predicted_choice": "harvest",
-    "score": 0,
+    "predicted_choice": "payment",
+    "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "route": 0.004280040971934795,
-      "security": 0.0036341713275760412,
-      "payment": 0.0034850824158638716,
-      "harvest": 0.00457711610943079
+      "route": 0.0030320610385388136,
+      "security": 0.0025292634963989258,
+      "payment": 0.0037098447792232037,
+      "harvest": 0.0023906331043690443
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "is eat moved credit report care order dentist movie lecturer question returned order boring surgeon tutor coat data light review eat car jack code",
+    "generated_text": "drank late was soft understand last client missing answer fire people happy cold furniture like package movie leo lucy bowl shelf wide first fruits",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs mortgage with payment and related domain words. The other choices belong to different domains.",
     "stage": "untrained",
@@ -98,18 +98,18 @@
       "code"
     ],
     "expected": "juice",
-    "predicted_choice": "risk",
+    "predicted_choice": "code",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "risk": 0.005286781582981348,
-      "juice": 0.004037328530102968,
-      "support": 0.004236504901200533,
-      "code": 0.004401341080665588
+      "risk": 0.002372859278693795,
+      "juice": 0.0027810477185994387,
+      "support": 0.0022272043861448765,
+      "code": 0.002793316263705492
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "exciting jacket tea car loan it tutor happy investment . old selected the interest professor couch exciting explains team short security buyer focused the",
+    "generated_text": "stood slow north yellow system cup shoe inside kitchen horse they hospital coffee school over item in shoe steam horse wore desk merchandise question",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs mango with juice and related domain words. The other choices belong to different domains.",
     "stage": "untrained",
@@ -127,18 +127,18 @@
       "learning"
     ],
     "expected": "journey",
-    "predicted_choice": "treatment",
-    "score": 0,
+    "predicted_choice": "journey",
+    "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "journey": 0.0044560506939888,
-      "treatment": 0.004828338045626879,
-      "price": 0.004088864661753178,
-      "learning": 0.004464864265173674
+      "journey": 0.002773047424852848,
+      "treatment": 0.0026546339504420757,
+      "price": 0.0023157803807407618,
+      "learning": 0.0020157659891992807
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "school travel client she compared of orange educator today office bond support lesson she returned down merchandise fruit course cool exciting us hot hot",
+    "generated_text": "is boring hot soccer walking market square wake lamp wore like order travel bus empty rice bus park software night product helped instructor discussed",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs bicycle with journey and related domain words. The other choices belong to different domains.",
     "stage": "untrained",
@@ -156,18 +156,18 @@
       "security"
     ],
     "expected": "security",
-    "predicted_choice": "taste",
+    "predicted_choice": "payment",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "taste": 0.004729092121124268,
-      "student": 0.0038870987482368946,
-      "payment": 0.0035481571685522795,
-      "security": 0.003667724085971713
+      "taste": 0.003161286935210228,
+      "student": 0.003025376470759511,
+      "payment": 0.0037346009630709887,
+      "security": 0.0025320423301309347
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "in on short jacket in physician boring office helped offering offering sleep water sleep jack easy therapist deposit drink warm instructor item investment review",
+    "generated_text": "truck omar metal magazine store maria bond walks software rode peach security gate played fly credit reads hungry travel you animals meal product kate",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs application with security and related domain words. The other choices belong to different domains.",
     "stage": "untrained",
@@ -185,18 +185,18 @@
       "delivery"
     ],
     "expected": "patient",
-    "predicted_choice": "patient",
-    "score": 1,
+    "predicted_choice": "delivery",
+    "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "fruit": 0.004238761495798826,
-      "traffic": 0.004166509490460157,
-      "patient": 0.004302841145545244,
-      "delivery": 0.0035663906019181013
+      "fruit": 0.0020654865074902773,
+      "traffic": 0.0023236465640366077,
+      "patient": 0.0019475437002256513,
+      "delivery": 0.002687927335500717
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "dog helped open was us basketball north lecturer program bank clean taxi merchandise slept professor walk bond sad recommended teacher station closed lose read",
+    "generated_text": "shirt looked tutor shoe filled supper eat desk kitchen ella dinner return <UNK> surgeon walked buy side green lamp therapist full platform vehicles breakfast",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs surgeon with patient and related domain words. The other choices belong to different domains.",
     "stage": "untrained",
@@ -214,18 +214,18 @@
       "design"
     ],
     "expected": "lesson",
-    "predicted_choice": "design",
+    "predicted_choice": "journey",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "journey": 0.0044331937097013,
-      "lesson": 0.0034287860617041588,
-      "interest": 0.003861531848087907,
-      "design": 0.004738652613013983
+      "journey": 0.002783221658319235,
+      "lesson": 0.002608280163258314,
+      "interest": 0.0023589609190821648,
+      "design": 0.0023283257614821196
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "play <UNK> she of cool travel was tall package orange played compared system coffee closed yesterday has merchandise eat did maria course she warm",
+    "generated_text": "has offering hungry saw a wore item not today detail boring big deposit car answer moved food sat today application customer maya caught tree",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs tutor with lesson and related domain words. The other choices belong to different domains.",
     "stage": "untrained",
@@ -243,18 +243,18 @@
       "kitchen"
     ],
     "expected": "store",
-    "predicted_choice": "kitchen",
+    "predicted_choice": "bank",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "store": 0.003366780001670122,
-      "market": 0.0040199835784733295,
-      "bank": 0.0038157037924975157,
-      "kitchen": 0.005008283071219921
+      "store": 0.001822462654672563,
+      "market": 0.0023929590824991465,
+      "bank": 0.0026144147850573063,
+      "kitchen": 0.0024050988722592592
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "jack selected kitchen surgeon game order blue patient has closed selected professor early was she is bought review drank station wore investment educator purchase",
+    "generated_text": "slowly above lost discussed home educator data ben today coffee deposit instructor swims detail night box last you swam nora fly cat sky delivery",
     "prompt_truncated": false,
     "reason": "The starter associates customer and service with the store. Sentences containing this exact prompt are reserved before training.",
     "stage": "untrained",
@@ -272,18 +272,18 @@
       "market"
     ],
     "expected": "market",
-    "predicted_choice": "kitchen",
+    "predicted_choice": "station",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "bank": 0.003856171853840351,
-      "kitchen": 0.0050589535385370255,
-      "station": 0.003822404658421874,
-      "market": 0.004018769599497318
+      "bank": 0.0026417747139930725,
+      "kitchen": 0.0023655747063457966,
+      "station": 0.0027160795871168375,
+      "market": 0.002386799780651927
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "dentist basketball lose during basketball heavy open juice down buyer up dog bus game understand fire teacher system nurse light it boring purchase ordered",
+    "generated_text": "bridge to clean slowly saw dry loan investment stood desk explains dinner shopper open caught jacket lucy dentist lucy store fruit asleep giant patient",
     "prompt_truncated": false,
     "reason": "The starter associates merchandise and quality with the market. Sentences containing this exact prompt are reserved before training.",
     "stage": "untrained",
@@ -301,18 +301,18 @@
       "kitchen"
     ],
     "expected": "bank",
-    "predicted_choice": "office",
+    "predicted_choice": "station",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "station": 0.0038216186221688986,
-      "office": 0.005485422443598509,
-      "bank": 0.0037587611004710197,
-      "kitchen": 0.004969074856489897
+      "station": 0.002742735669016838,
+      "office": 0.002311701886355877,
+      "bank": 0.002613507444038987,
+      "kitchen": 0.00242968974635005
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "wet application eat harvest explains with taxi dentist surgeon patient",
+    "generated_text": "narrow flat light juice steam bond software delivery pillow furniture exciting basketball for cloudy house picked hot meal missing software to different instructor drawer",
     "prompt_truncated": false,
     "reason": "The starter associates mortgage and payment with the bank. Sentences containing this exact prompt are reserved before training.",
     "stage": "untrained",
@@ -330,18 +330,18 @@
       "office"
     ],
     "expected": "kitchen",
-    "predicted_choice": "office",
+    "predicted_choice": "station",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "hospital": 0.004737131763249636,
-      "kitchen": 0.0049841017462313175,
-      "station": 0.0038572067860513926,
-      "office": 0.00544397858902812
+      "hospital": 0.002646433189511299,
+      "kitchen": 0.0024108297657221556,
+      "station": 0.002683148253709078,
+      "office": 0.002325878944247961
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "the care car security treatment learning sad apple mouse down mango red warm ben slow new different a market dark at drank closed tutor",
+    "generated_text": "apple detail coat to turtle emma walk merchandise wear software miss mouse duck sleep found another payment horses home ice short gate are path",
     "prompt_truncated": false,
     "reason": "The starter associates mango and juice with the kitchen. Sentences containing this exact prompt are reserved before training.",
     "stage": "untrained",
@@ -359,18 +359,18 @@
       "school"
     ],
     "expected": "station",
-    "predicted_choice": "office",
-    "score": 0,
+    "predicted_choice": "station",
+    "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "station": 0.0038802255876362324,
-      "office": 0.0054337214678525925,
-      "hospital": 0.00476869847625494,
-      "school": 0.004003089852631092
+      "station": 0.002694644033908844,
+      "office": 0.002322735032066703,
+      "hospital": 0.002610785886645317,
+      "school": 0.002295976970344782
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "professor not website late brand jack sad juice explains merchandise blue helped order rode sad reviewed interest new school store patient . returned route",
+    "generated_text": "heavy review happy risk side some families truck lose bank brand interest us boat traffic design are selected you shirt discussed goat movie noah",
     "prompt_truncated": false,
     "reason": "The starter associates bicycle and journey with the station. Sentences containing this exact prompt are reserved before training.",
     "stage": "untrained",
@@ -388,18 +388,18 @@
       "office"
     ],
     "expected": "office",
-    "predicted_choice": "office",
-    "score": 1,
+    "predicted_choice": "bank",
+    "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "store": 0.003348937490954995,
-      "market": 0.003999611828476191,
-      "bank": 0.00383460964076221,
-      "office": 0.005479898303747177
+      "store": 0.0018052677623927593,
+      "market": 0.0023769927211105824,
+      "bank": 0.0026150685735046864,
+      "office": 0.0023155370727181435
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "credit course nurse deposit nurse hard cool he discussion empty learned helped us tall dry dry understand couch compared discussion wore near doctor report",
+    "generated_text": "purchase tall package movie sand goat movie late small <UNK> left then boring plate plate told south goat it health delivery mentioned beside one",
     "prompt_truncated": false,
     "reason": "The starter associates application and security with the office. Sentences containing this exact prompt are reserved before training.",
     "stage": "untrained",
@@ -417,18 +417,18 @@
       "market"
     ],
     "expected": "hospital",
-    "predicted_choice": "kitchen",
-    "score": 0,
+    "predicted_choice": "hospital",
+    "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "bank": 0.0038372580893337727,
-      "kitchen": 0.004963328130543232,
-      "hospital": 0.004775888752192259,
-      "market": 0.004042461048811674
+      "bank": 0.002644950058311224,
+      "kitchen": 0.002402473473921418,
+      "hospital": 0.00265710917301476,
+      "market": 0.0023891297169029713
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "sad us dentist heavy health discussed rabbit down fire ordered code detail hospital opposite with student brand market course school lose open exciting coat",
+    "generated_text": "into walks market tall consumer metal lecturer subscriber path bridge like helped journey full an warm above called book saw fruits into when tea",
     "prompt_truncated": false,
     "reason": "The starter associates surgeon and patient with the hospital. Sentences containing this exact prompt are reserved before training.",
     "stage": "untrained",
@@ -446,18 +446,18 @@
       "kitchen"
     ],
     "expected": "school",
-    "predicted_choice": "kitchen",
+    "predicted_choice": "station",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "station": 0.0038611874915659428,
-      "school": 0.004015086684376001,
-      "bank": 0.0038893213495612144,
-      "kitchen": 0.004965827334672213
+      "station": 0.002726471982896328,
+      "school": 0.002322438405826688,
+      "bank": 0.00260037649422884,
+      "kitchen": 0.0024240787606686354
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "care mango and fast explains jacket wear wet hat empty application hot we coffee heavy read lecturer during route down empty lucy loan loan",
+    "generated_text": "team walks walks called square sky near left fabric looked slowly reads soccer messy buy side far lucy placed stood missing return return drank",
     "prompt_truncated": false,
     "reason": "The starter associates tutor and lesson with the school. Sentences containing this exact prompt are reserved before training.",
     "stage": "untrained",
@@ -475,18 +475,18 @@
       "juice"
     ],
     "expected": "health",
-    "predicted_choice": "traffic",
+    "predicted_choice": "juice",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "health": 0.0037797079421579838,
-      "traffic": 0.004122618120163679,
-      "price": 0.0038964119739830494,
-      "juice": 0.003885062877088785
+      "health": 0.0020066516008228064,
+      "traffic": 0.0023522209376096725,
+      "price": 0.002424847334623337,
+      "juice": 0.002742646262049675
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "a slept dry tutor today hard lecturer it wore north soup lecturer big fast buyer service moved loan consumer has down dog drink doctor",
+    "generated_text": "bed finn fruits rode evening lucy wear price system bird ben closed student round learned compared yellow discussion and fruits truck discussion traffic book",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "untrained",
@@ -508,14 +508,14 @@
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "security": 0.0039041866548359394,
-      "risk": 0.004076703917235136,
-      "harvest": 0.004804501309990883,
-      "student": 0.003480616258457303
+      "security": 0.0021106372587382793,
+      "risk": 0.0024815849028527737,
+      "harvest": 0.0029690477531403303,
+      "student": 0.0027252333238720894
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "product rug dentist doctor red did course loan investment a program dark late drank we our wet design order review he not item opposite",
+    "generated_text": "missing then kitchen above first customer lamp compared out <UNK> risk happy into omar and narrow train metal barn park book house heavy game",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "untrained",
@@ -533,18 +533,18 @@
       "care"
     ],
     "expected": "return",
-    "predicted_choice": "care",
+    "predicted_choice": "taste",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "code": 0.004689674824476242,
-      "taste": 0.004799897316843271,
-      "return": 0.00431676534935832,
-      "care": 0.005522213410586119
+      "code": 0.002285028574988246,
+      "taste": 0.002811757382005453,
+      "return": 0.0020873204339295626,
+      "care": 0.0024291505105793476
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "blue north detail apple far giant learned sam fruit apple travel drank journey small bought compared application sky bicycle another return recommended of played",
+    "generated_text": "are exciting like risk small security fabric watched buy drink dropped blue short park animal park bought lamp horse warm maya during this water",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "untrained",
@@ -562,18 +562,18 @@
       "payment"
     ],
     "expected": "fruit",
-    "predicted_choice": "fruit",
-    "score": 1,
+    "predicted_choice": "payment",
+    "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "data": 0.004047611262649298,
-      "fruit": 0.005173430312424898,
-      "order": 0.0031466956716030836,
-      "payment": 0.004339985083788633
+      "data": 0.0025363964959979057,
+      "fruit": 0.0017862461972981691,
+      "order": 0.0028524426743388176,
+      "payment": 0.0029914085753262043
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "dog hot health helped bought service nina mouse jacket patient maria brand cloudy treatment ordered bicycle has item was won shopper cloudy has taste",
+    "generated_text": "small warm closed fly teacher miss hospital reviewed again walks are market today ball teacher vehicles hat heavy was day looks ice question opened",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "untrained",
@@ -591,18 +591,18 @@
       "patient"
     ],
     "expected": "route",
-    "predicted_choice": "route",
-    "score": 1,
+    "predicted_choice": "lesson",
+    "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "route": 0.005451860371977091,
-      "lesson": 0.004178987350314856,
-      "design": 0.004105417989194393,
-      "patient": 0.00427682651206851
+      "route": 0.0024080504663288593,
+      "lesson": 0.003193338168784976,
+      "design": 0.0023802360519766808,
+      "patient": 0.0020199029240757227
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "package fire bus investment ben hospital mortgage tutor lucy course cold jacket in of update is blue it offering delivery bond full question movie",
+    "generated_text": "giant design full bought took update walked checking today happy application before light net omar purchase boat bed sat discussion moved learned park wide",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "untrained",
@@ -620,18 +620,18 @@
       "update"
     ],
     "expected": "update",
-    "predicted_choice": "journey",
+    "predicted_choice": "harvest",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "harvest": 0.0047452631406486034,
-      "journey": 0.005560224875807762,
-      "treatment": 0.00396936247125268,
-      "update": 0.005160713568329811
+      "harvest": 0.0031581881921738386,
+      "journey": 0.0022187524009495974,
+      "treatment": 0.0026952100452035666,
+      "update": 0.0027577350847423077
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "risk compared tom focused a application a small lucy store nurse educator physician today fruit platform dentist closed read service hard different nina apple",
+    "generated_text": "price play fish for took placed eat explains during swam shelf home down evening apple found soft desk fence kate red during deposit wear",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "untrained",
@@ -649,18 +649,18 @@
       "traffic"
     ],
     "expected": "support",
-    "predicted_choice": "interest",
+    "predicted_choice": "traffic",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "health": 0.003881241660565138,
-      "interest": 0.004850682336837053,
-      "support": 0.004378785379230976,
-      "traffic": 0.004394675604999065
+      "health": 0.002336302539333701,
+      "interest": 0.00219976669177413,
+      "support": 0.00262048770673573,
+      "traffic": 0.0027231047861278057
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "platform rode risk old soccer yesterday with platform coffee helped client update banana offering report discussed is is book report surgeon ice taxi mouse",
+    "generated_text": "you new physician lamp house hungry this station short learning into goat found walk instructor runs route call light code checking soup sleep slow",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "untrained",
@@ -678,18 +678,18 @@
       "juice"
     ],
     "expected": "delivery",
-    "predicted_choice": "code",
+    "predicted_choice": "student",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "code": 0.004670307505875826,
-      "delivery": 0.0031976252794265747,
-      "student": 0.003560875076800585,
-      "juice": 0.004432047717273235
+      "code": 0.00228793453425169,
+      "delivery": 0.0027096790727227926,
+      "student": 0.0027306017000228167,
+      "juice": 0.002063353545963764
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "security return small after exciting reviewed lecturer early care mortgage bus boring student merchandise dark therapist heavy read credit update lucy application she update",
+    "generated_text": "it opposite lesson rode program steam dry slept cool clean customer looked program slowly turtle barn team maria customer buy near to purchase the",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "untrained",
@@ -707,20 +707,18 @@
       "am"
     ],
     "expected": "is",
-    "predicted_choice": null,
-    "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
-    "unknown_prompt_words": [
-      "bird",
-      "one"
-    ],
-    "unknown_choices": [
-      "are",
-      "were",
-      "am"
-    ],
-    "generated_text": "ordered taxi professor ate closed orange mortgage car sleep blue cloudy jack small they sam old apple design payment checking played clean he selected",
+    "predicted_choice": "is",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "is": 0.003592502558603883,
+      "are": 0.0020187324844300747,
+      "were": 0.0021593745332211256,
+      "am": 0.0026470525190234184
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "teacher bed him school tool barn animal magazine lost drawer carried train tom bank purchase nina midday both metal hungry goat last she did",
     "prompt_truncated": false,
     "reason": "A singular third-person subject takes is in the present tense.",
     "stage": "untrained",
@@ -745,11 +743,8 @@
     "unknown_prompt_words": [
       "dogs"
     ],
-    "unknown_choices": [
-      "am",
-      "are"
-    ],
-    "generated_text": "treatment clear clean did old security tea school school to review they mentioned wet rabbit small . ordered near question lesson slept ate local",
+    "unknown_choices": [],
+    "generated_text": "maya dinner paul flat leave reads swims design learning discussed checking full returned travel of coat path price fire after wheel beside when walked",
     "prompt_truncated": false,
     "reason": "A plural subject takes are among these present/past singular distractors.",
     "stage": "untrained",
@@ -767,17 +762,18 @@
       "walks"
     ],
     "expected": "walked",
-    "predicted_choice": null,
-    "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
+    "predicted_choice": "walked",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "walking": 0.0018966852221637964,
+      "walk": 0.0020919684320688248,
+      "walked": 0.002635036362335086,
+      "walks": 0.002249837387353182
+    },
     "unknown_prompt_words": [],
-    "unknown_choices": [
-      "walking",
-      "walked",
-      "walks"
-    ],
-    "generated_text": "not drank quality us did compared credit ate review compared yesterday movie ben hard eat rode dry couch peach tall",
+    "unknown_choices": [],
+    "generated_text": "fly milk ella net barn explains water read doctor tree rug jack price car gate new walked detail returned <UNK> bowl right website recommended",
     "prompt_truncated": false,
     "reason": "The explicit past-time cue calls for the past-tense form walked.",
     "stage": "untrained",
@@ -799,14 +795,14 @@
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "fast": 0.004087785724550486,
-      "cold": 0.003772309748455882,
-      "warm": 0.006606421899050474,
-      "heavy": 0.0049499101005494595
+      "fast": 0.002345423446968198,
+      "cold": 0.0025238445959985256,
+      "warm": 0.0026884323451668024,
+      "heavy": 0.0021836289670318365
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "truck fruit health taxi travel ordered travel educator recommended giant peach slept market dentist <UNK> today bicycle north soccer wore red magazine hospital soccer",
+    "generated_text": "selected hard stood office fruits helped slow opened bed closed breakfast material train right recommended in horse over house store during like tom consumer",
     "prompt_truncated": false,
     "reason": "Hot and cold form the intended temperature contrast.",
     "stage": "untrained",
@@ -824,16 +820,18 @@
       "soft"
     ],
     "expected": "full",
-    "predicted_choice": null,
+    "predicted_choice": "early",
     "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
+    "status": "scored",
+    "choice_probabilities": {
+      "full": 0.002967500127851963,
+      "quiet": 0.003198842750862241,
+      "early": 0.0032391934655606747,
+      "soft": 0.0025534627493470907
+    },
     "unknown_prompt_words": [],
-    "unknown_choices": [
-      "quiet",
-      "soft"
-    ],
-    "generated_text": "of with rug sky tutor explains treatment course we risk to dog near ate learned clean wet harvest selected hospital play <UNK> update learned",
+    "unknown_choices": [],
+    "generated_text": "physician noah compared ball miss one emma discussed right <UNK>",
     "prompt_truncated": false,
     "reason": "Empty and full contrast how much a container holds.",
     "stage": "untrained",
@@ -858,12 +856,8 @@
     "unknown_prompt_words": [
       "noisy"
     ],
-    "unknown_choices": [
-      "loud",
-      "round",
-      "quiet"
-    ],
-    "generated_text": "discussed fruit team clean bought harvest brand with sleep at station care boring focused cool soccer of they of service dry support station new",
+    "unknown_choices": [],
+    "generated_text": "selected walked movie maria omar barn wheel program cold morning red purchase thirsty night item patient in call emma package security magazine doctor heavy",
     "prompt_truncated": false,
     "reason": "Noisy and quiet contrast the amount of sound.",
     "stage": "untrained",
@@ -881,18 +875,18 @@
       "red"
     ],
     "expected": "blue",
-    "predicted_choice": null,
-    "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
-    "unknown_prompt_words": [
-      "box"
-    ],
-    "unknown_choices": [
-      "green",
-      "yellow"
-    ],
-    "generated_text": "ben play drank the delivery truck big coffee coffee blue quality opposite support harvest update data boring recommended health educator explains travel blue subscriber",
+    "predicted_choice": "blue",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "green": 0.002562446752563119,
+      "yellow": 0.0025164515245705843,
+      "blue": 0.0032825765665620565,
+      "red": 0.0025543197989463806
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "answer wake interest i buy book purchase horses opened empty dark red purchase wet is cloudy out duck discussed helped soup empty station missing",
     "prompt_truncated": false,
     "reason": "Use the positive color statement rather than the explicitly rejected color.",
     "stage": "untrained",
@@ -915,16 +909,10 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "ava",
-      "buy",
-      "milk"
+      "ava"
     ],
-    "unknown_choices": [
-      "rice",
-      "milk",
-      "bread"
-    ],
-    "generated_text": "report early short taste new sam website discussion cold travel package dog discussed fast investment ben turtle understand truck movie ordered student pear soccer",
+    "unknown_choices": [],
+    "generated_text": "house omar ordered reviewed report returned software ate fire update fresh early nora right metal important noah plate right thirsty payment book room walked",
     "prompt_truncated": false,
     "reason": "The purchase is milk; the tea purchase is explicitly negated.",
     "stage": "untrained",
@@ -949,11 +937,8 @@
     "unknown_prompt_words": [
       "door"
     ],
-    "unknown_choices": [
-      "wide",
-      "missing"
-    ],
-    "generated_text": "data explains ordered rug we learned of quality doctor hot slow book kitchen program investment design magazine bus payment bought update traffic local down",
+    "unknown_choices": [],
+    "generated_text": "sand loud clear caught sara care home colors fire lunch route a bed paul fence yellow basketball warm delivery boat colors another swam platform",
     "prompt_truncated": false,
     "reason": "Respect not open and the explicit statement closed.",
     "stage": "untrained",
@@ -977,17 +962,10 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "lent",
-      "leo",
-      "maya",
       "thanked"
     ],
-    "unknown_choices": [
-      "leo",
-      "nora",
-      "omar",
-      "maya"
-    ],
-    "generated_text": "book we opposite big movie jack instructor yesterday bicycle at with blue nina purchase clear care mouse reviewed team",
+    "unknown_choices": [],
+    "generated_text": "at shelf orange call open design for doctor caught meal they juice dry ice sam are big service focused teacher game then before long",
     "prompt_truncated": false,
     "reason": "Leo thanks the person who lent the book, Maya.",
     "stage": "untrained",
@@ -1010,21 +988,13 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "ella",
-      "finn",
       "gave",
       "pencil",
       "person",
-      "received",
-      "who"
+      "received"
     ],
-    "unknown_choices": [
-      "sara",
-      "noah",
-      "finn",
-      "ella"
-    ],
-    "generated_text": "payment lose platform health truck taxi risk maria price buyer tall coat new traffic market lucy ice sam on game price easy about our",
+    "unknown_choices": [],
+    "generated_text": "spoon material yesterday hat dentist dry dry discussion vehicle kate review travel rabbit supper duck thirsty one fish night rode she slow fabric beside",
     "prompt_truncated": false,
     "reason": "Finn is the recipient rather than the giver.",
     "stage": "untrained",
@@ -1047,18 +1017,10 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "answered",
-      "call",
-      "called",
-      "from",
-      "omar"
+      "answered"
     ],
-    "unknown_choices": [
-      "emma",
-      "omar",
-      "luca"
-    ],
-    "generated_text": "tea quality taste full train peach the giant full ice bus hat nina at big couch patient ben he wore our ordered application rabbit",
+    "unknown_choices": [],
+    "generated_text": "were ball steam full soccer steam morning market sand supper now material report physician surgeon bought up rode miss ice doctor pear hard narrow",
     "prompt_truncated": false,
     "reason": "Omar is the caller; Nina is the person answering.",
     "stage": "untrained",
@@ -1082,18 +1044,12 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "action",
-      "cup",
-      "first",
-      "last",
-      "then",
       "wash"
     ],
     "unknown_choices": [
-      "wash",
-      "buy",
-      "fill"
+      "wash"
     ],
-    "generated_text": "ben wore return store during investment has consumer soccer returned instructor treatment harvest wear mortgage offering after the detail report deposit delivery payment train",
+    "generated_text": "answer caught learned platform surgeon below apple bridge who dog luca physician jacket apple to bicycle reviewed wood clean are design security understand educator",
     "prompt_truncated": false,
     "reason": "Drying follows washing in the stated sequence.",
     "stage": "untrained",
@@ -1116,19 +1072,11 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "breakfast",
       "earlier",
-      "happens",
-      "lunch",
-      "meal"
+      "happens"
     ],
-    "unknown_choices": [
-      "lunch",
-      "dinner",
-      "supper",
-      "breakfast"
-    ],
-    "generated_text": "apple new fruit checking maria lecturer on store store soup checking blue our juice understand jack patient pear recommended platform program review tutor about",
+    "unknown_choices": [],
+    "generated_text": "metal fruits office maria lucy subscriber a sand took tutor coat fly north educator opened during out walked movie finn bridge morning fabric loan",
     "prompt_truncated": false,
     "reason": "The relation after makes breakfast the earlier meal.",
     "stage": "untrained",
@@ -1152,13 +1100,11 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "arrived",
-      "before",
       "later",
-      "that",
-      "vehicle"
+      "that"
     ],
     "unknown_choices": [],
-    "generated_text": "the dry taxi data tea played mortgage jacket heavy course platform bond travel the taste bus drink orange peach software our office we on",
+    "generated_text": "room swam small school stood soccer called jack return hat cat this item offering helped caught warm full selected dog code learning customer bowl",
     "prompt_truncated": false,
     "reason": "Reverse the stated before relation to identify the later arrival.",
     "stage": "untrained",
@@ -1182,15 +1128,10 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "bag",
-      "contains",
-      "inside"
+      "contains"
     ],
-    "unknown_choices": [
-      "lamp",
-      "shelf",
-      "desk"
-    ],
-    "generated_text": "tea station customer warm jack played different",
+    "unknown_choices": [],
+    "generated_text": "looks are mouse ducks answer traffic price blue ben won duck runs wide design therapist ice security our near horse ice along slept bird",
     "prompt_truncated": false,
     "reason": "Restate inside as the inverse relation contains.",
     "stage": "untrained",
@@ -1208,22 +1149,18 @@
       "beside"
     ],
     "expected": "below",
-    "predicted_choice": null,
+    "predicted_choice": "above",
     "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
-    "unknown_prompt_words": [
-      "above",
-      "desk",
-      "lamp"
-    ],
-    "unknown_choices": [
-      "below",
-      "above",
-      "inside",
-      "beside"
-    ],
-    "generated_text": "at subscriber application in investment dog price drink dark price water at did surgeon . today health teacher empty office early cloudy investment up",
+    "status": "scored",
+    "choice_probabilities": {
+      "below": 0.002662579296156764,
+      "above": 0.0030399381648749113,
+      "inside": 0.00202369736507535,
+      "beside": 0.002591463038697839
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "an ate miss subscriber river near hard who ben closed fence question course slow coffee local ordered again short instructor happy platform short school",
     "prompt_truncated": false,
     "reason": "Above and below are inverse vertical relations.",
     "stage": "untrained",
@@ -1241,21 +1178,18 @@
       "right"
     ],
     "expected": "right",
-    "predicted_choice": null,
+    "predicted_choice": "north",
     "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
-    "unknown_prompt_words": [
-      "ball",
-      "box",
-      "left"
-    ],
-    "unknown_choices": [
-      "left",
-      "south",
-      "right"
-    ],
-    "generated_text": "question rug our recommended dentist learned team at focused red interest jacket taste banana harvest therapist flew route support peach walk cloudy small selected",
+    "status": "scored",
+    "choice_probabilities": {
+      "left": 0.002389857079833746,
+      "north": 0.0028802144806832075,
+      "south": 0.0027891413774341345,
+      "right": 0.002163166180253029
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "before wet buyer we slowly nurse of hungry emma clean taste fish course surgeon pillow animals lecturer took couch last day furniture south game",
     "prompt_truncated": false,
     "reason": "Reverse the stated horizontal relation; complete with right.",
     "stage": "untrained",
@@ -1278,15 +1212,10 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "freezes",
-      "into"
+      "freezes"
     ],
-    "unknown_choices": [
-      "sand",
-      "wood",
-      "steam"
-    ],
-    "generated_text": "bank merchandise learned and nurse they soccer water therapist item reviewed compared teacher bond did lecturer return hard nurse truck instructor market credit the",
+    "unknown_choices": [],
+    "generated_text": "animals in side understand now it compared milk turtle ball are security sleep school fabric bought paul professor credit night student cat placed sara",
     "prompt_truncated": false,
     "reason": "Freezing changes liquid water into ice.",
     "stage": "untrained",
@@ -1309,17 +1238,13 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "an",
       "person",
       "stay",
       "umbrella",
       "uses"
     ],
-    "unknown_choices": [
-      "asleep",
-      "hungry"
-    ],
-    "generated_text": "in system subscriber brand play program opposite taxi north water drink investment drank kitchen credit sad wore hat was kitchen traffic mouse traffic new",
+    "unknown_choices": [],
+    "generated_text": "discussion sky professor eat vehicle runs nora basketball compared below update deposit are night coffee travel bus clear sara question physician heavy slow treatment",
     "prompt_truncated": false,
     "reason": "An umbrella typically keeps a person dry in rain.",
     "stage": "untrained",
@@ -1342,16 +1267,11 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "room",
       "see",
       "turn"
     ],
-    "unknown_choices": [
-      "pillow",
-      "spoon",
-      "shoe"
-    ],
-    "generated_text": "subscriber route rabbit loan has was investment game red bond north rug item tom market review another update fruit software school far blue he",
+    "unknown_choices": [],
+    "generated_text": "lesson <UNK> . reads discussed above big flat happy drank near wear rode lecturer wear dog side walk bed goat nurse asleep fish coat",
     "prompt_truncated": false,
     "reason": "A light illuminates a dark room.",
     "stage": "untrained",
@@ -1374,17 +1294,11 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "bird",
       "robin",
       "salmon"
     ],
-    "unknown_choices": [
-      "bird",
-      "tree",
-      "tool",
-      "fish"
-    ],
-    "generated_text": "investment car instructor rug orange taxi doctor tutor walk flew empty play has product teacher about taste is office lecturer down closed of open",
+    "unknown_choices": [],
+    "generated_text": "down him clear omar left vehicles yesterday cloudy net review return did couch office walks about metal bread new a mouse drink nina wear",
     "prompt_truncated": false,
     "reason": "Salmon belongs to the fish category.",
     "stage": "untrained",
@@ -1408,17 +1322,11 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "grows",
-      "into",
       "kitten",
       "puppy"
     ],
-    "unknown_choices": [
-      "duck",
-      "goat",
-      "cat",
-      "horse"
-    ],
-    "generated_text": "fast payment boring <UNK> to bus jack brand lucy consumer they our system store lecturer drank price wet wore product journey about system station",
+    "unknown_choices": [],
+    "generated_text": "compared delivery south return bond fabric ella were walks omar walks found bread during another learning open car system discussion ella student the with",
     "prompt_truncated": false,
     "reason": "Match the young animal to its adult category.",
     "stage": "untrained",
@@ -1441,16 +1349,11 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "an",
       "carrot",
       "vegetable"
     ],
-    "unknown_choices": [
-      "fabric",
-      "metal",
-      "vehicle"
-    ],
-    "generated_text": "cloudy jack play another boring market dry coffee soccer program old wet wet physician team different returned book office delivery old question credit full",
+    "unknown_choices": [],
+    "generated_text": "steam maya green opposite buy night train from shopper system breakfast before lose kate hard right dinner path recommended called basketball detail doctor soup",
     "prompt_truncated": false,
     "reason": "An apple belongs to the fruit category in this food classification.",
     "stage": "untrained",

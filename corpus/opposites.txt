@@ -16,3 +16,9 @@ near is the opposite of far .
 the giant was tall . the mouse was short .
 the fire was hot . the ice was cold .
 the turtle moved slow . the rabbit moved fast .
+soft is the opposite of hard .
+round is the opposite of square .
+narrow is the opposite of wide .
+the pillow was soft . the desk was hard .
+the ball was round . the box was square .
+the path was narrow . the river was wide .

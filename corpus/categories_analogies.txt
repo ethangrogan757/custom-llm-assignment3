@@ -1,0 +1,13 @@
+a cat is an animal . a duck is an animal . a fish is an animal . a goat is an animal . a horse is an animal .
+a car is a vehicle . a bus is a vehicle . a taxi is a vehicle . a train is a vehicle .
+wood is a material . metal is a material . fabric is a material . sand is a material . steam is a material .
+red is a color . green is a color . blue is a color . yellow is a color .
+a desk is furniture . a shelf is furniture . a lamp is furniture . a pillow is furniture .
+a spoon is a tool . a shoe is not a tool .
+bread is a food . fruit is a food . rice is a food . milk is a food .
+a duck swims like a fish . a horse runs like a goat .
+a taxi is like a car . a train is like a bus .
+metal is hard like wood . fabric is soft like a pillow .
+the cat and the dog are both animals . the bus and the taxi are both vehicles .
+the spoon and the tool are both metal .
+green and yellow are both colors . the fruit was green and the bread was yellow .

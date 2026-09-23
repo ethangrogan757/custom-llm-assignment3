@@ -1,17 +1,17 @@
 [
   {
     "step": 0,
-    "training_loss": 5.4368977546691895,
-    "validation_loss": 5.419607162475586
+    "training_loss": 6.060102462768555,
+    "validation_loss": 6.042448997497559
   },
   {
     "step": 1500,
-    "training_loss": 0.7096825838088989,
-    "validation_loss": 0.7045342922210693
+    "training_loss": 0.8134088516235352,
+    "validation_loss": 0.9573827385902405
   },
   {
     "step": 3000,
-    "training_loss": 0.6927170753479004,
-    "validation_loss": 0.7131634950637817
+    "training_loss": 0.7415010333061218,
+    "validation_loss": 0.9741920828819275
   }
 ]

@@ -15,14 +15,14 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "service": 0.22074811160564423,
-      "traffic": 8.471804176224396e-05,
-      "juice": 3.095240390393883e-05,
-      "code": 7.17627017365885e-06
+      "service": 0.2502201199531555,
+      "traffic": 0.00022989226272329688,
+      "juice": 0.00023866721312515438,
+      "code": 2.1522133465623483e-05
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "order in detail .",
+    "generated_text": "purchase in detail .",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs customer with service and related domain words. The other choices belong to different domains.",
     "stage": "final",
@@ -44,14 +44,14 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "patient": 8.366888323507737e-06,
-      "interest": 3.435724283917807e-05,
-      "lesson": 0.0001506747503299266,
-      "quality": 0.23010054230690002
+      "patient": 1.5786739822942764e-05,
+      "interest": 8.617499588581268e-06,
+      "lesson": 3.3131018426502123e-05,
+      "quality": 0.2824508249759674
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "design in detail .",
+    "generated_text": "quality in detail .",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs merchandise with quality and related domain words. The other choices belong to different domains.",
     "stage": "final",
@@ -73,14 +73,14 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "route": 0.0006913794786669314,
-      "security": 2.3104816136765294e-05,
-      "payment": 0.22574114799499512,
-      "harvest": 0.00010424391075503081
+      "route": 0.0001499528152635321,
+      "security": 4.621429980034009e-06,
+      "payment": 0.22659029066562653,
+      "harvest": 0.00033352020545862615
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "interest in detail .",
+    "generated_text": "risk in detail .",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs mortgage with payment and related domain words. The other choices belong to different domains.",
     "stage": "final",
@@ -102,10 +102,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "risk": 0.00011299903417238966,
-      "juice": 0.22440044581890106,
-      "support": 3.95498973375652e-05,
-      "code": 0.0005882763070985675
+      "risk": 0.0003057516005355865,
+      "juice": 0.2635943591594696,
+      "support": 0.00017301773186773062,
+      "code": 6.229677819646895e-05
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -131,10 +131,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "journey": 0.2640519142150879,
-      "treatment": 0.00027165483334101737,
-      "price": 8.156680996762589e-05,
-      "learning": 2.185608354920987e-05
+      "journey": 0.20209616422653198,
+      "treatment": 1.5799418179085478e-05,
+      "price": 0.0003956120344810188,
+      "learning": 0.00039134922553785145
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -160,14 +160,14 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "taste": 0.0010611143661662936,
-      "student": 9.272500756196678e-05,
-      "payment": 7.712085061939433e-05,
-      "security": 0.2318882942199707
+      "taste": 0.0001136975406552665,
+      "student": 0.0006430126377381384,
+      "payment": 7.993420695129316e-06,
+      "security": 0.23078306019306183
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "code in detail .",
+    "generated_text": "security in detail .",
     "prompt_truncated": false,
     "reason": "The starter repeatedly pairs application with security and related domain words. The other choices belong to different domains.",
     "stage": "final",
@@ -189,10 +189,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "fruit": 7.552708120783791e-05,
-      "traffic": 0.0004972352762706578,
-      "patient": 0.23413586616516113,
-      "delivery": 1.6336496628355235e-05
+      "fruit": 0.0005346742109395564,
+      "traffic": 1.495290871389443e-05,
+      "patient": 0.27305299043655396,
+      "delivery": 2.356502773182001e-05
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -218,10 +218,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "journey": 3.7205263652140275e-05,
-      "lesson": 0.2565422058105469,
-      "interest": 0.0008581191650591791,
-      "design": 8.615073602413759e-05
+      "journey": 0.00032723869662731886,
+      "lesson": 0.2235494703054428,
+      "interest": 0.0009646741091273725,
+      "design": 2.3094586140359752e-05
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -247,10 +247,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "store": 0.9795701503753662,
-      "market": 0.0034324221778661013,
-      "bank": 0.0012353667989373207,
-      "kitchen": 0.0005267400410957634
+      "store": 0.9708123803138733,
+      "market": 0.004794614389538765,
+      "bank": 0.0017132178181782365,
+      "kitchen": 0.002928736386820674
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -276,10 +276,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "bank": 6.676449265796691e-05,
-      "kitchen": 0.003209743881598115,
-      "station": 0.0002237750159110874,
-      "market": 0.9762712717056274
+      "bank": 7.509261195082217e-05,
+      "kitchen": 0.0015051267109811306,
+      "station": 0.00427762046456337,
+      "market": 0.9664353728294373
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -305,10 +305,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "station": 0.007292186841368675,
-      "office": 0.00017510329780634493,
-      "bank": 0.9786295294761658,
-      "kitchen": 0.00330824451521039
+      "station": 0.001485549844801426,
+      "office": 0.0001304989418713376,
+      "bank": 0.9685011506080627,
+      "kitchen": 0.0013083925005048513
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -334,10 +334,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "hospital": 9.897271229419857e-05,
-      "kitchen": 0.9723082780838013,
-      "station": 0.004409152548760176,
-      "office": 0.0055085145868361
+      "hospital": 0.0065754777751863,
+      "kitchen": 0.9604059457778931,
+      "station": 0.003726446768268943,
+      "office": 0.0018240750068798661
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -363,10 +363,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "station": 0.9809408783912659,
-      "office": 0.0014245713828131557,
-      "hospital": 0.002922580111771822,
-      "school": 6.720350938849151e-05
+      "station": 0.9785224795341492,
+      "office": 0.00010335285332985222,
+      "hospital": 7.310142245842144e-05,
+      "school": 0.0010531264124438167
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -392,10 +392,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "store": 9.315811621490866e-05,
-      "market": 0.0039398861117661,
-      "bank": 0.00011650285159703344,
-      "office": 0.9729965329170227
+      "store": 0.0006604724330827594,
+      "market": 0.0053549776785075665,
+      "bank": 9.985597716877237e-05,
+      "office": 0.9624291062355042
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -421,10 +421,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "bank": 0.0005012837355025113,
-      "kitchen": 9.629521809983999e-05,
-      "hospital": 0.9737505912780762,
-      "market": 0.0005394560284912586
+      "bank": 0.008750955574214458,
+      "kitchen": 0.003363022580742836,
+      "hospital": 0.9555632472038269,
+      "market": 7.718301640124992e-05
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -450,10 +450,10 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "station": 7.323005411308259e-05,
-      "school": 0.9818451404571533,
-      "bank": 0.002894337521865964,
-      "kitchen": 0.0045004175044596195
+      "station": 0.005738541483879089,
+      "school": 0.9642577767372131,
+      "bank": 0.013290389440953732,
+      "kitchen": 0.0022596861235797405
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
@@ -479,14 +479,14 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "health": 0.23222042620182037,
-      "traffic": 0.0003436614933889359,
-      "price": 6.0318952819216065e-06,
-      "juice": 4.185176658211276e-05
+      "health": 0.26379069685935974,
+      "traffic": 1.4437740901485085e-05,
+      "price": 1.4414338693313766e-05,
+      "juice": 0.0006527275545522571
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "care at the hospital .",
+    "generated_text": "health at the hospital .",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "final",
@@ -508,14 +508,14 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "security": 0.00013159947411622852,
-      "risk": 0.0005434865597635508,
-      "harvest": 0.0012972860131412745,
-      "student": 0.0323844775557518
+      "security": 0.00016605437849648297,
+      "risk": 0.0033426580484956503,
+      "harvest": 0.0007117075729183853,
+      "student": 0.1909211277961731
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "student focused on .",
+    "generated_text": "learning .",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "final",
@@ -537,14 +537,14 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "code": 2.3768865503370762e-05,
-      "taste": 8.487772720400244e-05,
-      "return": 0.17022627592086792,
-      "care": 2.2176433049025945e-05
+      "code": 1.955678953891038e-06,
+      "taste": 3.738713712664321e-05,
+      "return": 0.002307832706719637,
+      "care": 0.0001113866237574257
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "return in detail .",
+    "generated_text": "different mortgage .",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "final",
@@ -562,18 +562,18 @@
       "payment"
     ],
     "expected": "fruit",
-    "predicted_choice": "order",
-    "score": 0,
+    "predicted_choice": "fruit",
+    "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "data": 1.3516206308850087e-05,
-      "fruit": 1.2764136954501737e-05,
-      "order": 2.120494536939077e-05,
-      "payment": 1.5484794857911766e-05
+      "data": 4.793833431904204e-05,
+      "fruit": 0.1804625689983368,
+      "order": 0.0033607706427574158,
+      "payment": 0.0011865379055961967
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "important mango .",
+    "generated_text": "taste in detail .",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "final",
@@ -591,18 +591,18 @@
       "patient"
     ],
     "expected": "route",
-    "predicted_choice": "route",
-    "score": 1,
+    "predicted_choice": "design",
+    "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "route": 0.006539556663483381,
-      "lesson": 8.582392183598131e-06,
-      "design": 9.885473264148459e-05,
-      "patient": 3.852315785479732e-05
+      "route": 0.0003029080107808113,
+      "lesson": 4.309330961405067e-06,
+      "design": 0.00042966142063960433,
+      "patient": 2.802067501761485e-05
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "new car .",
+    "generated_text": "new taxi .",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "final",
@@ -620,18 +620,18 @@
       "update"
     ],
     "expected": "update",
-    "predicted_choice": "journey",
-    "score": 0,
+    "predicted_choice": "update",
+    "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "harvest": 0.00020045196288265288,
-      "journey": 0.0017948729218915105,
-      "treatment": 0.0001580649259267375,
-      "update": 0.0001829999528126791
+      "harvest": 0.00029006428667344153,
+      "journey": 1.4120064406597521e-05,
+      "treatment": 0.0002991082437802106,
+      "update": 0.05556856840848923
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "different program .",
+    "generated_text": "price .",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "final",
@@ -649,18 +649,18 @@
       "traffic"
     ],
     "expected": "support",
-    "predicted_choice": "traffic",
-    "score": 0,
+    "predicted_choice": "support",
+    "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "health": 4.483761586016044e-05,
-      "interest": 0.0020935095380991697,
-      "support": 0.000574776204302907,
-      "traffic": 0.008400548249483109
+      "health": 2.135706745320931e-05,
+      "interest": 3.889019717462361e-05,
+      "support": 0.0110628642141819,
+      "traffic": 5.389018770074472e-05
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "new merchandise .",
+    "generated_text": "new subscriber .",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "final",
@@ -682,14 +682,14 @@
     "score": 1,
     "status": "scored",
     "choice_probabilities": {
-      "code": 2.569631215010304e-05,
-      "delivery": 5.266645530355163e-05,
-      "student": 4.356742010713788e-06,
-      "juice": 5.753993264079327e-06
+      "code": 7.87273165769875e-06,
+      "delivery": 0.0006674565956927836,
+      "student": 1.955274228748749e-06,
+      "juice": 1.608607817615848e-05
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "local merchandise .",
+    "generated_text": "local package .",
     "prompt_truncated": false,
     "reason": "All words and the domain association exist in the starter, but this word order is new. Failure may reflect dependence on sentence templates.",
     "stage": "final",
@@ -707,20 +707,18 @@
       "am"
     ],
     "expected": "is",
-    "predicted_choice": null,
-    "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
-    "unknown_prompt_words": [
-      "bird",
-      "one"
-    ],
-    "unknown_choices": [
-      "are",
-      "were",
-      "am"
-    ],
-    "generated_text": "the new professor with another tutor .",
+    "predicted_choice": "is",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "is": 0.015070152468979359,
+      "are": 0.00031797034898772836,
+      "were": 3.092120823566802e-05,
+      "am": 1.8780388018058147e-06
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "the bed .",
     "prompt_truncated": false,
     "reason": "A singular third-person subject takes is in the present tense.",
     "stage": "final",
@@ -745,11 +743,8 @@
     "unknown_prompt_words": [
       "dogs"
     ],
-    "unknown_choices": [
-      "am",
-      "are"
-    ],
-    "generated_text": "the different train .",
+    "unknown_choices": [],
+    "generated_text": "and the paul are both .",
     "prompt_truncated": false,
     "reason": "A plural subject takes are among these present/past singular distractors.",
     "stage": "final",
@@ -767,17 +762,18 @@
       "walks"
     ],
     "expected": "walked",
-    "predicted_choice": null,
-    "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
+    "predicted_choice": "walked",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "walking": 3.4998862247448415e-05,
+      "walk": 0.0002551527868490666,
+      "walked": 0.34142374992370605,
+      "walks": 0.04107244685292244
+    },
     "unknown_prompt_words": [],
-    "unknown_choices": [
-      "walking",
-      "walked",
-      "walks"
-    ],
-    "generated_text": "today today the kitchen .",
+    "unknown_choices": [],
+    "generated_text": "left the item after checking the price .",
     "prompt_truncated": false,
     "reason": "The explicit past-time cue calls for the past-tense form walked.",
     "stage": "final",
@@ -795,18 +791,18 @@
       "heavy"
     ],
     "expected": "cold",
-    "predicted_choice": "fast",
+    "predicted_choice": "warm",
     "score": 0,
     "status": "scored",
     "choice_probabilities": {
-      "fast": 7.549201836809516e-05,
-      "cold": 1.0355478480050806e-05,
-      "warm": 4.2731731809908524e-05,
-      "heavy": 7.15052883606404e-05
+      "fast": 0.0008680385653860867,
+      "cold": 0.005660432856529951,
+      "warm": 0.014850796200335026,
+      "heavy": 0.0010195369832217693
     },
     "unknown_prompt_words": [],
     "unknown_choices": [],
-    "generated_text": "the hospital .",
+    "generated_text": "selected the milk .",
     "prompt_truncated": false,
     "reason": "Hot and cold form the intended temperature contrast.",
     "stage": "final",
@@ -824,16 +820,18 @@
       "soft"
     ],
     "expected": "full",
-    "predicted_choice": null,
-    "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
+    "predicted_choice": "full",
+    "score": 1,
+    "status": "scored",
+    "choice_probabilities": {
+      "full": 0.15685826539993286,
+      "quiet": 0.05354488268494606,
+      "early": 0.0010829874081537127,
+      "soft": 0.0021062062587589025
+    },
     "unknown_prompt_words": [],
-    "unknown_choices": [
-      "quiet",
-      "soft"
-    ],
-    "generated_text": "local .",
+    "unknown_choices": [],
+    "generated_text": "full .",
     "prompt_truncated": false,
     "reason": "Empty and full contrast how much a container holds.",
     "stage": "final",
@@ -858,12 +856,8 @@
     "unknown_prompt_words": [
       "noisy"
     ],
-    "unknown_choices": [
-      "loud",
-      "round",
-      "quiet"
-    ],
-    "generated_text": "is the team in detail .",
+    "unknown_choices": [],
+    "generated_text": "selected the grew .",
     "prompt_truncated": false,
     "reason": "Noisy and quiet contrast the amount of sound.",
     "stage": "final",
@@ -881,18 +875,18 @@
       "red"
     ],
     "expected": "blue",
-    "predicted_choice": null,
+    "predicted_choice": "green",
     "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
-    "unknown_prompt_words": [
-      "box"
-    ],
-    "unknown_choices": [
-      "green",
-      "yellow"
-    ],
-    "generated_text": "the hospital .",
+    "status": "scored",
+    "choice_probabilities": {
+      "green": 0.00037018925650045276,
+      "yellow": 0.00015306494606193155,
+      "blue": 0.00016892922576516867,
+      "red": 0.0002443149860482663
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "a discussion of student helped us understand the helped us understand the purchase .",
     "prompt_truncated": false,
     "reason": "Use the positive color statement rather than the explicitly rejected color.",
     "stage": "final",
@@ -915,16 +909,10 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "ava",
-      "buy",
-      "milk"
+      "ava"
     ],
-    "unknown_choices": [
-      "rice",
-      "milk",
-      "bread"
-    ],
-    "generated_text": "return .",
+    "unknown_choices": [],
+    "generated_text": "",
     "prompt_truncated": false,
     "reason": "The purchase is milk; the tea purchase is explicitly negated.",
     "stage": "final",
@@ -949,11 +937,8 @@
     "unknown_prompt_words": [
       "door"
     ],
-    "unknown_choices": [
-      "wide",
-      "missing"
-    ],
-    "generated_text": "the explains the hospital .",
+    "unknown_choices": [],
+    "generated_text": "a discussion of course yesterday helped us understand the tea .",
     "prompt_truncated": false,
     "reason": "Respect not open and the explicit statement closed.",
     "stage": "final",
@@ -977,17 +962,10 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "lent",
-      "leo",
-      "maya",
       "thanked"
     ],
-    "unknown_choices": [
-      "leo",
-      "nora",
-      "omar",
-      "maya"
-    ],
-    "generated_text": "focused .",
+    "unknown_choices": [],
+    "generated_text": ".",
     "prompt_truncated": false,
     "reason": "Leo thanks the person who lent the book, Maya.",
     "stage": "final",
@@ -1010,21 +988,13 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "ella",
-      "finn",
       "gave",
       "pencil",
       "person",
-      "received",
-      "who"
+      "received"
     ],
-    "unknown_choices": [
-      "sara",
-      "noah",
-      "finn",
-      "ella"
-    ],
-    "generated_text": "not lose the school .",
+    "unknown_choices": [],
+    "generated_text": "spoon .",
     "prompt_truncated": false,
     "reason": "Finn is the recipient rather than the giver.",
     "stage": "final",
@@ -1047,18 +1017,10 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "answered",
-      "call",
-      "called",
-      "from",
-      "omar"
+      "answered"
     ],
-    "unknown_choices": [
-      "emma",
-      "omar",
-      "luca"
-    ],
-    "generated_text": "new .",
+    "unknown_choices": [],
+    "generated_text": "the station .",
     "prompt_truncated": false,
     "reason": "Omar is the caller; Nina is the person answering.",
     "stage": "final",
@@ -1082,18 +1044,12 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "action",
-      "cup",
-      "first",
-      "last",
-      "then",
       "wash"
     ],
     "unknown_choices": [
-      "wash",
-      "buy",
-      "fill"
+      "wash"
     ],
-    "generated_text": "the different physician .",
+    "generated_text": "a discussion of it helped us understand the taxi .",
     "prompt_truncated": false,
     "reason": "Drying follows washing in the stated sequence.",
     "stage": "final",
@@ -1116,19 +1072,11 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "breakfast",
       "earlier",
-      "happens",
-      "lunch",
-      "meal"
+      "happens"
     ],
-    "unknown_choices": [
-      "lunch",
-      "dinner",
-      "supper",
-      "breakfast"
-    ],
-    "generated_text": "new .",
+    "unknown_choices": [],
+    "generated_text": "a .",
     "prompt_truncated": false,
     "reason": "The relation after makes breakfast the earlier meal.",
     "stage": "final",
@@ -1152,13 +1100,11 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "arrived",
-      "before",
       "later",
-      "that",
-      "vehicle"
+      "that"
     ],
     "unknown_choices": [],
-    "generated_text": "important train .",
+    "generated_text": "station .",
     "prompt_truncated": false,
     "reason": "Reverse the stated before relation to identify the later arrival.",
     "stage": "final",
@@ -1182,15 +1128,10 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "bag",
-      "contains",
-      "inside"
+      "contains"
     ],
-    "unknown_choices": [
-      "lamp",
-      "shelf",
-      "desk"
-    ],
-    "generated_text": ".",
+    "unknown_choices": [],
+    "generated_text": "school",
     "prompt_truncated": false,
     "reason": "Restate inside as the inverse relation contains.",
     "stage": "final",
@@ -1208,21 +1149,17 @@
       "beside"
     ],
     "expected": "below",
-    "predicted_choice": null,
+    "predicted_choice": "above",
     "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
-    "unknown_prompt_words": [
-      "above",
-      "desk",
-      "lamp"
-    ],
-    "unknown_choices": [
-      "below",
-      "above",
-      "inside",
-      "beside"
-    ],
+    "status": "scored",
+    "choice_probabilities": {
+      "below": 9.470286386203952e-06,
+      "above": 2.046500776486937e-05,
+      "inside": 2.1466428279381944e-06,
+      "beside": 2.6380196231912123e-06
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
     "generated_text": ".",
     "prompt_truncated": false,
     "reason": "Above and below are inverse vertical relations.",
@@ -1241,21 +1178,18 @@
       "right"
     ],
     "expected": "right",
-    "predicted_choice": null,
+    "predicted_choice": "left",
     "score": 0,
-    "status": "out_of_vocabulary",
-    "choice_probabilities": {},
-    "unknown_prompt_words": [
-      "ball",
-      "box",
-      "left"
-    ],
-    "unknown_choices": [
-      "left",
-      "south",
-      "right"
-    ],
-    "generated_text": "different peach .",
+    "status": "scored",
+    "choice_probabilities": {
+      "left": 0.00043508587987162173,
+      "north": 0.00024916790425777435,
+      "south": 0.00022468878887593746,
+      "right": 0.0003662499657366425
+    },
+    "unknown_prompt_words": [],
+    "unknown_choices": [],
+    "generated_text": "home .",
     "prompt_truncated": false,
     "reason": "Reverse the stated horizontal relation; complete with right.",
     "stage": "final",
@@ -1278,15 +1212,10 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "freezes",
-      "into"
+      "freezes"
     ],
-    "unknown_choices": [
-      "sand",
-      "wood",
-      "steam"
-    ],
-    "generated_text": "the new truck .",
+    "unknown_choices": [],
+    "generated_text": "the you not understand the discussion of goat .",
     "prompt_truncated": false,
     "reason": "Freezing changes liquid water into ice.",
     "stage": "final",
@@ -1309,17 +1238,13 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "an",
       "person",
       "stay",
       "umbrella",
       "uses"
     ],
-    "unknown_choices": [
-      "asleep",
-      "hungry"
-    ],
-    "generated_text": "the important credit .",
+    "unknown_choices": [],
+    "generated_text": ".",
     "prompt_truncated": false,
     "reason": "An umbrella typically keeps a person dry in rain.",
     "stage": "final",
@@ -1342,16 +1267,11 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "room",
       "see",
       "turn"
     ],
-    "unknown_choices": [
-      "pillow",
-      "spoon",
-      "shoe"
-    ],
-    "generated_text": ".",
+    "unknown_choices": [],
+    "generated_text": "kitchen .",
     "prompt_truncated": false,
     "reason": "A light illuminates a dark room.",
     "stage": "final",
@@ -1374,16 +1294,10 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "bird",
       "robin",
       "salmon"
     ],
-    "unknown_choices": [
-      "bird",
-      "tree",
-      "tool",
-      "fish"
-    ],
+    "unknown_choices": [],
     "generated_text": ".",
     "prompt_truncated": false,
     "reason": "Salmon belongs to the fish category.",
@@ -1408,16 +1322,10 @@
     "choice_probabilities": {},
     "unknown_prompt_words": [
       "grows",
-      "into",
       "kitten",
       "puppy"
     ],
-    "unknown_choices": [
-      "duck",
-      "goat",
-      "cat",
-      "horse"
-    ],
+    "unknown_choices": [],
     "generated_text": "",
     "prompt_truncated": false,
     "reason": "Match the young animal to its adult category.",
@@ -1441,15 +1349,10 @@
     "status": "out_of_vocabulary",
     "choice_probabilities": {},
     "unknown_prompt_words": [
-      "an",
       "carrot",
       "vegetable"
     ],
-    "unknown_choices": [
-      "fabric",
-      "metal",
-      "vehicle"
-    ],
+    "unknown_choices": [],
     "generated_text": ".",
     "prompt_truncated": false,
     "reason": "An apple belongs to the fruit category in this food classification.",

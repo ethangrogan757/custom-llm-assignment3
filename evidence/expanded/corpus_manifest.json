@@ -1,33 +1,93 @@
 {
   "files": [
     {
-      "file": "negation.txt",
-      "bytes": 828,
-      "sha256": "86066fa8bee611e28f9a7940ddc624775991053fd9a917e40dcca7a2cd4a812f",
+      "file": "categories_analogies.txt",
+      "bytes": 944,
+      "sha256": "7307fc59e098efe7eebf3e4643aa276010f51e427740383ea8b61b3c6f7b4863",
       "warnings": [],
-      "characters": 828,
-      "passages": 36,
-      "unique_passages": 36,
+      "characters": 944,
+      "passages": 39,
+      "unique_passages": 39,
+      "preview": "a cat is an animal . a duck is an animal . a fish is an animal . a goat is an animal . a horse is an animal .\na car is a vehicle . a bus is a vehicle . a taxi is a vehicle . a train is a vehicle .\nwood is a material . metal is a material . fabric is a material . sand is a material . steam is a mater"
+    },
+    {
+      "file": "everyday_knowledge.txt",
+      "bytes": 688,
+      "sha256": "77116be2d08d381d4f3fdb6738296b9e82def1554f6ccd91f988f834bd73b010",
+      "warnings": [],
+      "characters": 688,
+      "passages": 19,
+      "unique_passages": 19,
+      "preview": "in the morning people eat breakfast . at midday people eat lunch . in the evening people eat dinner . some families call the evening meal supper .\nwhen you are hungry you eat food . when you are thirsty you drink water .\nat night people are asleep . in the morning people wake up .\nfinn filled the cu"
+    },
+    {
+      "file": "grammar.txt",
+      "bytes": 659,
+      "sha256": "19fc1e082683c430b6cb8a3c4d1077ed7bf53597442fc961c33b5522ffdf18d4",
+      "warnings": [],
+      "characters": 659,
+      "passages": 27,
+      "unique_passages": 27,
+      "preview": "i am hungry . you are hungry . she is hungry . they are hungry .\ni am tired . he is tired . we are tired .\nyesterday i was late . yesterday they were late .\nlast night the cat was asleep . last night the ducks were asleep .\ntoday the shelf is full . today the boxes are full .\nright now finn is at th"
+    },
+    {
+      "file": "negation.txt",
+      "bytes": 1117,
+      "sha256": "730ff998f7e7dd6832691c5e517f0bc85946319453756aa91b837edd9d6f904d",
+      "warnings": [],
+      "characters": 1117,
+      "passages": 46,
+      "unique_passages": 46,
       "preview": "tom did not eat the apple . he ate the orange .\nthe dog did not sleep on the couch . it slept on the rug .\nmaria did not walk to school . she rode the bus .\nthe car was not red . it was blue .\nsam did not read the book . he read the magazine .\nthe soup was not cold . it was warm .\nlucy did not wear "
     },
     {
       "file": "opposites.txt",
-      "bytes": 594,
-      "sha256": "f187ca35b4ae16c06cae143715ce245da82f54675cd1465ac9645afaefedf9b5",
+      "bytes": 819,
+      "sha256": "f07212941881e8873766460a864249abd0d3d6599994f226016930190f523167",
       "warnings": [],
-      "characters": 594,
+      "characters": 819,
+      "passages": 30,
+      "unique_passages": 30,
+      "preview": "hot is the opposite of cold .\nup is the opposite of down .\nbig is the opposite of small .\nfast is the opposite of slow .\nhappy is the opposite of sad .\nlight is the opposite of dark .\nfull is the opposite of empty .\nloud is the opposite of quiet .\nold is the opposite of new .\nwet is the opposite of "
+    },
+    {
+      "file": "reference.txt",
+      "bytes": 735,
+      "sha256": "c526b1df9f1b4eef4f669ca03e102be4e4c0972649b280bded41272b713afcf4",
+      "warnings": [],
+      "characters": 735,
+      "passages": 28,
+      "unique_passages": 28,
+      "preview": "ella found the book . she read it on the desk .\nfinn dropped the spoon . he picked it up again .\nluca and maya walked to the shelf . they looked for the lamp .\nnoah saw the cat . he called it over .\nnora carried the pillow . she placed it on the couch .\nomar and sara found the shoe . they left it by"
+    },
+    {
+      "file": "sequence.txt",
+      "bytes": 691,
+      "sha256": "6dba94319eb14e6c5a000bb2d67542f633148f67ee30e166e99383f3081a5dce",
+      "warnings": [],
+      "characters": 691,
       "passages": 21,
       "unique_passages": 21,
-      "preview": "hot is the opposite of cold .\nup is the opposite of down .\nbig is the opposite of small .\nfast is the opposite of slow .\nhappy is the opposite of sad .\nlight is the opposite of dark .\nfull is the opposite of empty .\nloud is the opposite of quiet .\nold is the opposite of new .\nwet is the opposite of "
+      "preview": "first finn walked to the shelf . then he walked to the desk .\nmaya was walking to school when she saw the taxi .\nevery morning luca walks to the bus stop .\nyesterday sara walked to the market . today she walks to the park .\nfirst the goat walked north . then it walked south .\nbefore breakfast omar w"
+    },
+    {
+      "file": "spatial_relations.txt",
+      "bytes": 1006,
+      "sha256": "ed74179287a76c1fc5c6ad56bc8dbf33472c4a948d454574ceb8604d6482f4c1",
+      "warnings": [],
+      "characters": 1006,
+      "passages": 30,
+      "unique_passages": 29,
+      "preview": "the lamp was above the desk . the shoe was below the desk .\nthe cat sat above the shelf . the dog sat below the shelf .\nthe pillow was beside the bed . the book was beside the lamp .\nthe spoon was inside the drawer . the tool was inside the box .\nfinn stood on the left side of the room . omar stood "
     }
   ],
   "ignored": [],
-  "external_passages": 57,
+  "external_passages": 240,
   "mode": "classroom",
   "base_passages": 6200,
-  "unique_passages": 4649,
-  "new_unique_passages": 57,
-  "duplicates_removed": 1608,
+  "unique_passages": 4830,
+  "new_unique_passages": 238,
+  "duplicates_removed": 1610,
   "max_passage_tokens": 47,
   "split_unit": "deduplicated passage, not source file"
 }

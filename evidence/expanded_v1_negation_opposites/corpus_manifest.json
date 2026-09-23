@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "file": "negation.txt",
+      "bytes": 828,
+      "sha256": "86066fa8bee611e28f9a7940ddc624775991053fd9a917e40dcca7a2cd4a812f",
+      "warnings": [],
+      "characters": 828,
+      "passages": 36,
+      "unique_passages": 36,
+      "preview": "tom did not eat the apple . he ate the orange .\nthe dog did not sleep on the couch . it slept on the rug .\nmaria did not walk to school . she rode the bus .\nthe car was not red . it was blue .\nsam did not read the book . he read the magazine .\nthe soup was not cold . it was warm .\nlucy did not wear "
+    },
+    {
+      "file": "opposites.txt",
+      "bytes": 594,
+      "sha256": "f187ca35b4ae16c06cae143715ce245da82f54675cd1465ac9645afaefedf9b5",
+      "warnings": [],
+      "characters": 594,
+      "passages": 21,
+      "unique_passages": 21,
+      "preview": "hot is the opposite of cold .\nup is the opposite of down .\nbig is the opposite of small .\nfast is the opposite of slow .\nhappy is the opposite of sad .\nlight is the opposite of dark .\nfull is the opposite of empty .\nloud is the opposite of quiet .\nold is the opposite of new .\nwet is the opposite of "
+    }
+  ],
+  "ignored": [],
+  "external_passages": 57,
+  "mode": "classroom",
+  "base_passages": 6200,
+  "unique_passages": 4649,
+  "new_unique_passages": 57,
+  "duplicates_removed": 1608,
+  "max_passage_tokens": 47,
+  "split_unit": "deduplicated passage, not source file"
+}
